@@ -1,16 +1,61 @@
 # Tool Learning Log
 
-## Tool: **X**
+## Tool: **Kaboom.js**
 
-## Project: **X**
+## Project: **Make an RPG with 2d sprites**
 
 ---
 
-### X/X/XX:
-* Text
+### 10/4/24:
+* I tried to test out some things in the Kaboom.js playground to see what it has
+* Has different things like gravity, add, movement, etc.
+* Tried seeing what gravity does
+* https://kaboomjs.com/play?example=gravity
+* Near the top it says `setGravity(1600)`, I think 1600 may be the default value
+* I wondered what would happen if I tried changing the value, so I did a few times, to like 1800 and 1400
+* On the other side of the code, it shows what the product of the code is
+  ![image](https://github.com/user-attachments/assets/5c69e9a9-b42a-4818-9de0-d91e00996d53)
+* When setting it to a higher number, the sprite jumps low
+* When it's set to a low number, the sprite jumps higher
+* So you add more or less force depending on what Number is inserted
 
-### X/X/XX:
-* Text
+* Below, there was more code but I also saw that it said add which was a component I saw, so I went back to check it since it was the first one on the list
+* More explanations, add is used to add a game object, which I think is things like sprites, backgrounds, props, etc.
+* Below, there was more components, with small explanations, will put here in case of usage:
+![image](https://github.com/user-attachments/assets/674e4f4a-41e2-4434-8570-2fe27f769f19)
+* Explanations :
+* sprite() component makes it render as a sprite
+* pos() component gives it position, also enables movement
+* rotate() component gives it rotation
+* anchor() component defines the pivot point (defaults to "topleft")
+* Will try more components or a video tutorial
+
+
+### 10/6/24:
+* Watching a video tutorial of how to make a game with Kaboom.js
+* https://www.youtube.com/watch?v=hgReGsh5xVU
+* Some notes:
+* body() makes the game object fall with gravity
+* keyPress is used so that when you press whatever key you set it to, something happens
+* To test what you wrote, `debug.log('message here");` can be written
+* `scale()` can be used to change the size of the sprite
+* Brackets always needs to be used if it's an array of components
+* Sprites always need to be loaded or they will not be recognized
+
+![image](https://github.com/user-attachments/assets/b8c145a4-31c6-4161-a4c6-e4211e5e6f0e)
+* `{flipY: true}` will flip the sprite ^^^
+* `rand(,)` is like a random number generator
+* Putting a string in between the list is considered a tag, so it can be found if something like the action function is used
+* `Action` will specify something you want to do to certain game objects every frame
+* `tag.move(,)` lets the game object move
+
+![image](https://github.com/user-attachments/assets/5005630e-aa40-4fdd-b765-a2af4094b4be)
+
+* If I collide with something specific, I can make it go to a scene, for example, a game over screen, saving in case of usage
+* `play()` will allow you to play a sound effect of your choice
+* How does the custom component work? OP wrote `PIPE_GAP` for the space between the gaps of the pipes, it works, but I don't understand how?
+* Why are the arrow functions needed? What do they really do?
+* A lot of the code still confuses me, some seems a little too advanced since I don't understand and I have questions but I think I'll try finding more tutorials or seeing if Phaser is less complicated for me instead next time
 
 
 <!-- 
