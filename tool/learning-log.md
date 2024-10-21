@@ -57,6 +57,22 @@
 * Why are the arrow functions needed? What do they really do?
 * A lot of the code still confuses me, some seems a little too advanced since I don't understand and I have questions but I think I'll try finding more tutorials or seeing if Phaser is less complicated for me instead next time
 
+### 10/21/24:
+
+* Learning about Phaser, following a tutorial: https://phaser.io/tutorials/making-your-first-phaser-3-game/part1
+* ^^ Tries explaining about how to make a starter game to get used to the basics
+* Not entirely sure about how Phaser is meant to work, but that's why I looked for this tutorial to understand better
+* Phaser seems to use a lot of functions, like creating, updating and preloading
+* Preload is a function that Phaser automatically looks for, so it's important to use it
+* It looks for it since its needed to load the sprites and everything else made for the game
+* A lot of the commands start with the word `this` usually
+* `platform.create` is used to make a floor, anything for the sprite to stand on
+* How do you make a sprite walk?
+* When they write down `repeat:` in the code, there's a negative one, why that number and not a positive one?
+* Phaser seems more complicated to me than Kaboom.js does, so I think I'm gonna end up using Kaboom after all
+* Next time I'll try to learn more about how to make and use sprites, also making them walk
+
+
 
 <!-- 
 * Links you used today (websites, videos, etc)
