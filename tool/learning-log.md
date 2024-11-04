@@ -72,6 +72,10 @@
 * Phaser seems more complicated to me than Kaboom.js does, so I think I'm gonna end up using Kaboom after all
 * Next time I'll try to learn more about how to make and use sprites, also making them walk
 
+### 11/4/24:
+
+* Watching this tutorial to make another game, plus for levels: https://www.youtube.com/watch?v=37rASpfnCCM
+* 
 
 
 <!-- 
