@@ -20,7 +20,7 @@ k.add([
 Changing the 'k.pos' is how you change the position of your sprite. The first parameter is the x-coordinate and the second parameter is the y-coordinate. So this works like how a graph does. When I changed the scale number, it changed sizes. Bigger number is a bigger size and smaller number is a smaller size. When I changed the rotation, there seemed to be a pivot point at the upper left corner and when I kept changing the number, it eventually went out of the map where I couldn't see it. Another thing I did was learn that after setting gravity, there's something you need to write in order for sprites to stay on a base. First, I made my base, which was a rectangle and then after that, I added `body({ isStatic: true })`, since I was following a tutorial. I wondered what happened if I changed it to false, and when I did that, the sprite that was on the base just fell, along with the rectangle. So if I don't write true, everything falls down.
 
 # What I'm planning to make
-I'm still not sure what to make, I wanted to make a 2D rpg (Roleplaying game), but I'm not sure what plot there should be or what characters I use. 
+I'm still not sure what to make, I wanted to make a 2D rpg (Roleplaying game), but I'm not sure what plot there should be or what characters I use. I'm thinking of either making up some characters to use for the game or I'll just use some characters from one of my favorite medias. Then, whatever I pick I'll base the plot on whatever the plot is from the media I picked.
 
 # Engineering Design Process
 Right now, I think I'm at step 4 of the EDP (Enginnering design process) that was me thinking about what tool to use. But now that I have the idea of what I'm gonna make, I need to figure out how I'll actually make the game. I need a plan of how I'll start the process of making my game, so that's why I think I'm on step 4 or possibly step 5 of the process.
@@ -28,6 +28,7 @@ Right now, I think I'm at step 4 of the EDP (Enginnering design process) that wa
 # Skills
 
 ## How to learn
+
 
 ## Time Management
 
