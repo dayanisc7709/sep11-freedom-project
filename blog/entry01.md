@@ -28,9 +28,10 @@ Right now, I think I'm at step 4 of the EDP (Enginnering design process) that wa
 # Skills
 
 ## How to learn
-
+Since Kaboom.js is new to me, I'm doing a lot of learning and gaining knowledge from it. It's showing me new things I can do and I learn a lot by going to tutorials, googling and reading anything about Kaboom.js. I saw that Kaboom.js was on replit, but for some reason it wasn't working. It was outdated and I was doing something wrong, so I saw that there was a newer version that I had to use instead of Kaboom.js, it's still the same but it just has a different name (Kaplay).
 
 ## Time Management
+I struggled a lot with my time management. Like in my learning log, I wasn't using my time well and I ended up having to push it to the last minute, which wasn't good. I still got it done, but now I think I need to work on my time management, so I can get my work done easier, have more time, and work at a better pace compared to how I did this time. So next time, I hope to improve on this skills, also other skills as well.
 
 [Next](entry02.md)
 
