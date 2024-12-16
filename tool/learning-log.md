@@ -103,7 +103,24 @@
 * There doesn't seem to be a built in function to have a background be set
 * I went to search on google and found that answer there: https://stackoverflow.com/questions/70559159/kaboom-js-how-to-set-the-background-to-an-image
 * No function that has it, so it has to be added in as a game object like the rest
-*
+* I've found that when making a platform, in order for the sprite to stick, it needs `body({ isStatic: true })`
+* I tried setting it to false and the character would not stick to it
+* The `isStatic` also makes it so that the sprite doesn't go past it at all, sort of like a border
+  
+* With `isStatic` set to true:
+  
+* ![image](https://github.com/user-attachments/assets/8c9727da-aab5-43fe-ac3e-589cea941526)
+  
+* With `isStatic`set to false:
+  
+* ![image](https://github.com/user-attachments/assets/4068e653-7bc6-4b7e-a832-d824b8829609)
+
+* I also found that when it's false, you can move the platform if you push it down
+* Scenes can be planned out with maps
+* If you make a planned out map with symbols, the symbols can be replaced with the sprites and obstacles
+* All of this is then transferred onto the actual game
+* I had some trouble with this, it didn't transfer onto the game, so I'm not sure if I got something wrong
+* Next time I'll try practicing more with collisions
 
 <!-- 
 * Links you used today (websites, videos, etc)
