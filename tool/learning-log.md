@@ -97,6 +97,14 @@
 * I wonder why a lot of people use these variable with caps only, what changes if I use those?
 * Next time, I think I'll try figuring out how scenes work
 
+### 12/15/24:
+
+* Figuring out hwo scenes work this time
+* There doesn't seem to be a built in function to have a background be set
+* I went to search on google and found that answer there: https://stackoverflow.com/questions/70559159/kaboom-js-how-to-set-the-background-to-an-image
+* No function that has it, so it has to be added in as a game object like the rest
+*
+
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
