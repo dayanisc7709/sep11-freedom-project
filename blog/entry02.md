@@ -23,7 +23,7 @@ onKeyDown('down', () => {
 ```
 
 I also found that to make your sprite be able to jump, you just write `.jump` instead of `.move` and they're both built in functions. I don't think I will be using jumping for what I'm trying to do, but I decided it would be better to still give it a try, just in case. I tried using the space button for `onKeyDown`instead of the arrow keys, but the up key can also be used for this. My jumping was able to work, but now my problem was how to put a limit to it. If you keep the press on the space key, it's still going up and I wasn't sure how to change this. I tried using `variable.grounded` since I saw this as an option, but it still didn't do anything. 
-I also tried finding out how scenes work, so I can using them to make the background and such. There wasn't a built in function for this, so it has to be treated like other game objects. which is basically `add ([ code goes in here ])`, so it's the same. I also tried making a platform instead of a background, so I have more options. But, when I made this platform, it was missing something since my sprite wasn't exactly sitting on the platform. But then I found it:
+I also tried finding out how scenes work, so I can using them to make the background and such. There wasn't a built in function for this as I found out from here: https://stackoverflow.com/questions/70559159/kaboom-js-how-to-set-the-background-to-an-image , so it has to be treated like other game objects. which is basically `add ([ code goes in here ])`, so it's the same. I also tried making a platform instead of a background, so I have more options. But, when I made this platform, it was missing something since my sprite wasn't exactly sitting on the platform. But then I found it:
 
 ```js
 add([
