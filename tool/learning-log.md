@@ -75,8 +75,27 @@
 ### 11/4/24:
 
 * Watching this tutorial to make another game, plus for levels: https://www.youtube.com/watch?v=37rASpfnCCM
-* 
+*
 
+
+### 12/14/24:
+
+* Testing movement in Kaboom.js
+* `onKeyDown` and adding the name of the key identifies the key
+* `variable.move` will allow the sprite to actually move
+* Things to remember from here:
+  * ![image](https://github.com/user-attachments/assets/d615604c-a4c6-4ae7-9ed4-266a9254b9ff)
+  * positive x-coordinates and 0 as the y-coordinate makes it move to the right
+  * negative x-coordinates and 0 as the y-coordinate makes it move to the left
+  * positive y-coordinates and 0 as the x-coordinate makes it move down
+  * negative y-coordinates and 0 as the x-coordinate makes it move up
+ 
+* To make the sprite jump, space or up can also be used
+* Instead of using `varible.move`, it uses `variable.jump` and is a built in function
+* I'm having a bit of trouble with jumping though, it jumps but it doesn't have a limit to how many times you can do this
+* I tried testing this with `variable.grounded`, but this didn't work, I don't think I will use it anyway but it would be better to know
+* I wonder why a lot of people use these variable with caps only, what changes if I use those?
+* Next time, I think I'll try figuring out how scenes work
 
 <!-- 
 * Links you used today (websites, videos, etc)
