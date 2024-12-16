@@ -43,6 +43,20 @@ I found out that it needed a function called `body({ isStatic: true })` in order
 
 I think the goal I wanna set for Winter Break is figuring out how to make one scene or more with symbols since it seems a lot more simpler than manually doing everything, but I have to figure out what went wrong when I did it the first time. I also wanna see if it's possible for me to learn how I can make it go to the next level/scene, since that's something I really need to learn as well. So to do this, I'll try watching some more tutorials and some more research.
 
+### Engineering Design Process
+
+I think I may be going back to step two since I've still been doing a lot of research for my Freedom Project tool and I'm still unsure of which way to be making my game. But this would technically make me be in step four too as well since I'm thinking about what way to be making the game, so I may be stuck inbetween those two steps for now.
+
+### Skills 
+
+#### Embracing failure
+
+I'm making a lot of mistakes during my tinkering with Kaboom.js, but I think they may actually be helping me because it does motivate me to want to learn more about my tool. It makes me want to get it right and still keep on trying to figure out what I'm doing wrong with the code. It is giving me motivation, but at some point, I do hope to get the hang of how most of my tool functions. 
+
+#### Organization
+
+The last time I tried tinkering there was a huge mess, like too many files for me to keep track of since I imported a bunch of stuff from Kaboom, it also lagged just a bit when I tried importing the first time. This made it a bit confusing for me to figure what goes where. So I tried going back to the official website and found an easier way to not have everything jumbled up together. You could import Kaboom.js in an html file, but it didn't import in the huge amount of files from before, but it had to be inside of the script tags. It was sort of a clean slate, so now everything else was gone. But I think that helped me get more organized and was less stressful to manage the entire thing. I'm glad I was able to work on this skill since now it will be a bit easier. 
+
 [Previous](entry01.md) | [Next](entry03.md)
 
 [Home](../README.md)
