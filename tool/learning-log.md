@@ -128,4 +128,5 @@
 * Challenges, a-ha moments, etc
 * Questions you still have
 * What you're going to try next
+* https://jslegenddev.substack.com/p/how-to-implement-one-way-platforms
 -->
