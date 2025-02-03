@@ -1,7 +1,7 @@
 # Entry 3
-##### X/X/XX
+##### 2/3/24
 
-Text
+### Tinkering I've done with my tool
 
 [Previous](entry02.md) | [Next](entry04.md)
 
