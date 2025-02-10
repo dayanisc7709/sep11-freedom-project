@@ -1,7 +1,7 @@
 # Plan
 
-## Tool: 
-## Product: 
+## Tool: Kaboom JS
+## Product: 2d RPG sprite game
 
 ---
 
@@ -9,7 +9,8 @@
 
 #### MVP
 
-- [ ] Task (deadline: X)
+- [Start planning out a scene, where the sprites will go ] Task (deadline: X)
+- [Create the scene that was planned out]
   - [ ] Subtask (deadline: X)
 
 #### Beyond MVP
