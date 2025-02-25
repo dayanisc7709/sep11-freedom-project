@@ -9,21 +9,24 @@
 
 #### MVP
 
-- [ ] Plan out a scene, decide where sprite(s) will go (deadline: 2/18) 
-- [ ] Create most of scene that was planned out (deadline:2/22)
-  - [ ] Add a background + a floor for sprites (DL:2/20)
-  - [ ] Make/Find and insert sprites (DL: 2/22)
-  - [ ] Give sprites ability to move around (DL: 2/22)
-- [ ] Make/Find and add obstacles (deadline: 3/12)
-  - [ ] Add collisions to the obstacles (DL: 3/15)
-  - [ ] Add a game-over scene (DL: 3/20)
-- [ ] Add dialogue when walking over certain spots (deadline: 3/25)
+- [ ] Plan out a scene, decide where sprite(s) will go (deadline: 3/9) 
+- [ ] Create most of scene that was planned out (deadline:3/16)
+  - [ ] Add a background + a floor for sprites (DL:3/15)
+  - [ ] Make/Find and insert sprites (DL: 3/16)
+  - [ ] Give sprites ability to move around (DL: 3/16)
+- [ ] Make/Find and add obstacles (deadline: 3/30)
+  - [ ] Add collisions to the obstacles (DL: 3/29)
+  - [ ] Add a game-over scene (DL: 3/30)
+  - [ ] Add a winning screen (DL: 3/30)  
+
 
 
 #### Beyond MVP
 
-- [ ] Add another scene/portal (deadline: 3/)
-  - [ ] Subtask
+If possible,
+- [ ] Add another scene/portal (deadline: 4/4)
+- [ ] Add some dialogue if you go over certain areas of the map (DL: 4/6)
+  - [ ] Add a character that's able to converse with the person playing 
 
 
 <!-- EXAMPLE
