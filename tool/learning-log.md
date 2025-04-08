@@ -97,10 +97,87 @@
 * I wonder why a lot of people use these variable with caps only, what changes if I use those?
 * Next time, I think I'll try figuring out how scenes work
 
+### 12/15/24:
+
+* Figuring out hwo scenes work this time
+* There doesn't seem to be a built in function to have a background be set
+* I went to search on google and found that answer there: https://stackoverflow.com/questions/70559159/kaboom-js-how-to-set-the-background-to-an-image
+* No function that has it, so it has to be added in as a game object like the rest
+* I've found that when making a platform, in order for the sprite to stick, it needs `body({ isStatic: true })`
+* I tried setting it to false and the character would not stick to it
+* The `isStatic` also makes it so that the sprite doesn't go past it at all, sort of like a border
+  
+* With `isStatic` set to true:
+  
+* ![image](https://github.com/user-attachments/assets/8c9727da-aab5-43fe-ac3e-589cea941526)
+  
+* With `isStatic`set to false:
+  
+* ![image](https://github.com/user-attachments/assets/4068e653-7bc6-4b7e-a832-d824b8829609)
+
+* I also found that when it's false, you can move the platform if you push it down
+* Scenes can be planned out with maps
+* If you make a planned out map with symbols, the symbols can be replaced with the sprites and obstacles
+* All of this is then transferred onto the actual game
+* I had some trouble with this, it didn't transfer onto the game, so I'm not sure if I got something wrong
+* Next time I'll try practicing more with collisions
+
+### 3/24/25
+
+* Finding out about how 
+* Went to the Kaplay Playground: https://play.kaplayjs.com/
+* Found `onCollision()` function, didn't work the first times I used it
+* The game object that's being destroyed has to be called "enemy" or it won't work
+* The game object that's colliding with the other object has to be called "player" or it won't work as well
+* When adding collisions, all the objects need the `area()` component or it won't work
+* Adding 'destroy()' will make the game object disappear from the game, as shown below:
+
+![image](https://github.com/user-attachments/assets/0180bff0-c6cb-4bf7-a4bb-2a4351a926f3)
+![image](https://github.com/user-attachments/assets/32b6e64c-ef3e-47be-a16b-bacb0b64056f)
+![image](https://github.com/user-attachments/assets/927bfedb-5072-4499-9f2c-6b43796e3859)
+
+* Also found that using 'rand()' for x and y-coordinates will give it a random spot to go around the game
+* Setting two numbers in the parenthesis will choose from between those two numbers, so it has a specific range the game object can go to, like below here:
+
+![image](https://github.com/user-attachments/assets/e7201c22-e639-4fb8-8b07-03cd0b450db1)
+![image](https://github.com/user-attachments/assets/85655618-8241-48d7-83b9-811f274b46ad)
+
+* The block is able to move to different places now with `rand()`
+* I still wonder why it didn't work with the normal name of the object?
+* It seems to work fine for others with different names, so I wonder if it specifically only works with some names
+
+### 3/28/25
+
+* Created a game over scene
+* Took another look at the Kaplay Playground to check how scenes work
+* I didn't seem to be able to use scenes, but was able to make a game over scene another way
+* When using the `onCollide()` function, you can also add text
+* More than one game objects can be destroyed at once when using collisions
+* However, it seems it'll only accept the player to be destroyed since it's defined
+* I wonder if it's possible to destroy other game objects that aren't the player
+* If another game object name is typed in, it won't work anymore
+* Putting this together, will allow this to happen:
+
+![image](https://github.com/user-attachments/assets/6c424142-99a7-4f25-b12b-f9b9054d12ae)
+![image](https://github.com/user-attachments/assets/2bfb2b51-4bcd-40ff-958b-2cfb2dbadd9a)
+
+* I learned that even without using scenes, there can be another way to make a game over screen
+* Using what I learned to do with the game over scene, I made one for the winning screen
+* Both ended up looking like this:
+
+  ![image](https://github.com/user-attachments/assets/b3f47542-7619-4ba5-b06b-f02944427613)
+  ![image](https://github.com/user-attachments/assets/1399f722-cddb-4448-bcb0-89a5e1371f92)
+
+* For the next time, I'll add the background and sprites
+* I'll try learning how to make sprites and be able to replace the current ones
+
+
+
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
 * Challenges, a-ha moments, etc
 * Questions you still have
 * What you're going to try next
+* https://jslegenddev.substack.com/p/how-to-implement-one-way-platforms
 -->
