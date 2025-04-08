@@ -1,0 +1,124 @@
+<script type="module">
+
+    // import kaboom.js
+    import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
+
+    // initialize kaboom context
+    kaboom();
+
+
+    loadSprite("bean", "../kaplay/assets/sprites/bean.png")
+    loadSprite("grass", "../kaplay/assets/sprites/grass.png")
+    loadSprite("steel", "../kaplay/assets/sprites/steel.png")
+    loadSprite("apple", "../kaplay/assets/sprites/apple.png")
+
+const player = add([
+	pos(300, 500),
+	sprite("bean"),
+	scale(1.5),
+   body(),
+   area(),
+])
+
+const steel = add([
+    pos(rand(200, 1200), rand(40,500)),
+    sprite("steel"),
+    scale(1.5),
+    area(),
+    body(),
+    "enemy",
+]);
+
+const apple = add([
+pos(rand(200, 1200), rand(40,500)),
+    sprite("apple"),
+    scale(1.5),
+    area(),
+    body(),
+    "danger",
+])
+
+
+
+player.onCollide("enemy", (enemy) => {
+    destroy(enemy);
+    add([
+        text("Right one! You win!"),
+    ]);
+    destroy(player);
+});
+
+player.onCollide("danger", (danger) =>{
+    destroy(danger);
+    add([
+        text("Wrong one! You lose!"),
+    ]);
+    destroy(player);
+});
+
+
+// ...
+
+
+// add([
+//     sprite("sky"),
+//     body(),
+//     area(),
+//     pos(100,100)
+// ])
+
+add([
+    rect(width(), 48),
+    pos(0, height() - 48),
+    outline(4),
+    area(),
+    body({isStatic: true}),
+    color('#000000'),
+])
+
+add([
+    rect(width(), 48),
+    pos(0, 0),
+    outline(4),
+    area(),
+    body({isStatic: true}),
+    color('#000000'),
+])
+
+//add bg/floor
+
+add([
+    rect(250, height()),
+    pos(0, 0),
+    outline(4),
+    area(),
+    body({isStatic: true}),
+    color('#000000'),
+])
+
+add([
+    rect(400, height()),
+    pos(1150, 0),
+    outline(4),
+    area(),
+    body({isStatic: true}),
+    color('#000000'),
+])
+
+onKeyDown('right', () => {
+    player.move(300, 0)
+})
+
+onKeyDown('left', () => {
+    player.move(-300, 0)
+})
+
+onKeyDown('up', () => {
+    player.move(0, -300)
+})
+
+onKeyDown('down', () => {
+    player.move(0, 300)
+})
+
+    </script>
