@@ -6,32 +6,43 @@
     // initialize kaboom context
     kaboom();
 
+    loadSprite("wood", "public/sprites/wood.png")
+    loadSprite("wcapsule", "public/sprites/wcapsule.png")
+    loadSprite("rcapsule", "public/sprites/rcapsule.png")
+    loadSprite("player", "public/sprites/idle3.png")
+    loadSprite("player2", "public/sprites/up2.png")
+    loadSprite("player3", "public/sprites/down2.png")
+    loadSprite("player4", "public/sprites/left4.png")
+    loadSprite("player5", "public/sprites/right3.png")
 
-    loadSprite("bean", "./kaplay/assets/sprites/bean.png")
-    loadSprite("grass", "../kaplay/assets/sprites/grass.png")
-    loadSprite("steel", "../kaplay/assets/sprites/steel.png")
-    loadSprite("apple", "../kaplay/assets/sprites/apple.png")
 
-const player = add([
-	pos(300, 500),
-	sprite("bean"),
-	scale(1.5),
-   body(),
-   area(),
+
+const background = add([
+    sprite("wood"),
+    scale(1.5),
+    pos(width()/6, height() /12),
 ])
 
-const steel = add([
+const player = add([
+        pos(width()* 0.5, height()* 0.5),
+        sprite('player'),
+        scale(2),
+        body(),
+        area(),
+    ])
+
+const wrong = add([
     pos(rand(200, 1200), rand(40,500)),
-    sprite("steel"),
+    sprite("rcapsule"),
     scale(1.5),
     area(),
     body(),
     "enemy",
 ]);
 
-const apple = add([
+const right = add([
 pos(rand(200, 1200), rand(40,500)),
-    sprite("apple"),
+    sprite("wcapsule"),
     scale(1.5),
     area(),
     body(),
@@ -39,33 +50,26 @@ pos(rand(200, 1200), rand(40,500)),
 ])
 
 
-
 player.onCollide("enemy", (enemy) => {
     destroy(enemy);
-    add([
-        text("Right one! You win!"),
-    ]);
     destroy(player);
-});
+    add([
+        text("That's the right one! You win!")
+    ])
 
-player.onCollide("danger", (danger) =>{
+})
+
+    player.onCollide("danger", (danger) => {
     destroy(danger);
-    add([
-        text("Wrong one! You lose!"),
-    ]);
     destroy(player);
-});
+    add([
+        text("That's the wrong one! You lose!")
+    ])
+
+})
 
 
 // ...
-
-
-// add([
-//     sprite("sky"),
-//     body(),
-//     area(),
-//     pos(100,100)
-// ])
 
 add([
     rect(width(), 48),
@@ -85,7 +89,6 @@ add([
     color('#000000'),
 ])
 
-//add bg/floor
 
 add([
     rect(250, height()),
@@ -105,20 +108,26 @@ add([
     color('#000000'),
 ])
 
+
 onKeyDown('right', () => {
     player.move(300, 0)
+    player.use(sprite("player5"));
 })
+
 
 onKeyDown('left', () => {
     player.move(-300, 0)
+    player.use(sprite("player4"));
 })
 
 onKeyDown('up', () => {
     player.move(0, -300)
-})
+    player.use(sprite("player2"));
+});
 
 onKeyDown('down', () => {
     player.move(0, 300)
+    player.use(sprite("player3"));
 })
 
     </script>
