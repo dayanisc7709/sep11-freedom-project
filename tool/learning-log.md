@@ -171,7 +171,46 @@
 * For the next time, I'll add the background and sprites
 * I'll try learning how to make sprites and be able to replace the current ones
 
+### 4/19/25
 
+* Not specifically coding, but I learned how to make a sprite sheets or just seperate sprites for the game
+* https://procreate.com/ was what I used to be able to make my sprites
+* https://www.youtube.com/watch?v=kFhnYYdhIo4 was the video that helped me make my sprites
+* I learned a lot of simple tricks in order to make sprites more easier
+* The smaller the sprites sizes are, the more easier it was to make smaller changes and make it appear as if the character were walking
+* As you keep on going, there seems to be more copy and pasting with the sprites
+* It showed me that sprites didn't necessarily have to be all that complicated
+* I only kept running into an issue where when I flipped the sprites to make the other side, the pixels didn't match up
+* In the lineart, sometimes one side had more pixels than the other, so I tried to fix that to the best I could
+* I was able to finish the sprites without much problems after that
+* All that I need to do next is import them onto the game and a background as well
+
+### 4/20/25
+
+* Now that I had my sprites, I was able to replace them with the provided sprites from kaboom
+* Watched this video: https://www.youtube.com/watch?v=n-q0pKGhxyw&t=617s
+* I didn't really get to understand a lot of the code, which was an issue
+* In the video, other components and functions are mentioned, like `loadSpriteAtlas' and 'export function'
+* When I tried setting up the first part of the code, it was able to load the sprite sheet, however, when I tried to play the idol animation: `(player.play('idle-down'))`, it said the `idle-down` animation wasn't a thing
+* Tried seeing if maybe switching `loadSpriteAtlas` to `loadSprite` would do anything, but it didn't
+* Wasn't sure where my error was, since I had made sure I made the idle animation
+* Decided to use another method, found one here: https://stackoverflow.com/questions/76142448/how-to-switch-the-players-sprite-image-in-javascript-kaboom-js
+* It's not very well used it seems, since sprite sheets are more used
+* However, I tried this:
+
+```
+onKeyDown('right', () => {
+    player.move(300, 0)
+    player.use(sprite("player5"));
+})
+```
+* When right key is pressed, the sprite changes, so I used this for the rest of the keys
+* I was able to replace the default Kaboom sprite with my own and even the obstacles, as well
+* I also finally found a background to use, which I was looking for
+* I still wonder what went wrong when I tried to make my character move
+* Did I need to do exactly everything in the video or was there another way where I didn't have to?
+* I wonder if there's also other ways besides `player.use` to switch sprites?
+* Next time I wanna see if I'm able to make each of the idle sprites stay in place after the character has stopped moving
 
 <!-- 
 * Links you used today (websites, videos, etc)
