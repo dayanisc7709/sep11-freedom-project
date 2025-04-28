@@ -34,7 +34,7 @@ If the right was detected being pressed down, then the idle sprite would change 
 
 I think I'm now on step seven of the process since I've basically done everything for my MVP. However, now that my MVP is done, I can go beyond my MVP. That's basically just making improvements or just adding other extra stuff you couldn't when making the MVP. I think once I'm done with beyond MVP, I'll finally be on my final step of the process.
 
-## SKills
+## Skills
 
 ### Debugging
 
