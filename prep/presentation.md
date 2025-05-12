@@ -4,10 +4,10 @@
 * 
 
 ## Product
-* 
+* Show off project with two gifs, left side will be the correct option of the game and the right one will pick the wrong option
 
 ## Process
-* 
+* Grab and show code snippets from project MVP
 
 ## Conclusion
 * 
