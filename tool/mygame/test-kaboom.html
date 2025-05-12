@@ -53,14 +53,20 @@ pos(rand(200, 1200), rand(40,500)),
 player.onCollide("enemy", (enemy) => {
     destroy(enemy);
     destroy(player);
-    go(win);
+    add([
+		text("That's the safe one, you win!"),
+        pos(12),
 
+    ])
 })
 
     player.onCollide("danger", (danger) => {
     destroy(danger);
     destroy(player);
-        go(lose);
+	add([
+		text("That's the wrong one! You lose!"),
+		pos(12),
+    ]);
 
 })
 
@@ -135,22 +141,6 @@ onKeyDown('up', () => {
 onKeyDown('down', () => {
     player.move(0, 300)
     player.use(sprite("player3"));
-})
-
-scene("lose", () => {
-
-	add([
-		text("That's the wrong one! You lose!"),
-		pos(12),
-    ])
-})
-
-    scene("win", () => {
-
-	add([
-		text("That's the safe one, you win!"),
-        pos(12),
-	]),
 })
 
  </script>
