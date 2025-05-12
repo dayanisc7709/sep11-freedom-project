@@ -53,20 +53,27 @@ pos(rand(200, 1200), rand(40,500)),
 player.onCollide("enemy", (enemy) => {
     destroy(enemy);
     destroy(player);
-    add([
-        text("That's the right one! You win!")
-    ])
+    go(win);
 
 })
 
     player.onCollide("danger", (danger) => {
     destroy(danger);
     destroy(player);
-    add([
-        text("That's the wrong one! You lose!")
-    ])
+        go(lose);
 
 })
+
+    if (onKeyDown('n')) {
+        add([
+            pos(rand(200, 1200), rand(40,500)),
+            sprite("wcapsule"),
+            scale(1.5),
+            area(),
+            body(),
+            "danger",
+        ])
+    }
 
 
 // ...
@@ -130,4 +137,20 @@ onKeyDown('down', () => {
     player.use(sprite("player3"));
 })
 
-    </script>
+scene("lose", () => {
+
+	add([
+		text("That's the wrong one! You lose!"),
+		pos(12),
+    ])
+})
+
+    scene("win", () => {
+
+	add([
+		text("That's the safe one, you win!"),
+        pos(12),
+	]),
+})
+
+ </script>
