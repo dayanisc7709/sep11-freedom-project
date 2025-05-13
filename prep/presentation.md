@@ -1,16 +1,22 @@
 # Presentation Plan
 
 ## Hook
-* 
+* Story about how the Freedom Project gave me the liberty to create whatever I wanted, which in turn gave ideas for my game
 
 ## Product
 * Show off project with two gifs, left side will be the correct option of the game and the right one will pick the wrong option
 
 ## Process
-* Grab and show code snippets from project MVP
+* Grab and show code snippets from project MVP:
+   * How I made the movement with keys and sprites
+   * How I made collisions in the game plus my errors/challenge with it
+* Not code, but talk about where and how I made my sprites for my game
 
 ## Conclusion
-* 
+* URL to the project
+* Takeaways:
+   * Patience is key - I had many errors when I was making my project, I was getting impatient with it not working, but I realized I need patience in order to keep going
+   * Use your resources - I struggled a lot in my project, which made me explore the resources around me to help myself to understand better and give me an easier time with coding and tinkering
 
 <!-- EXAMPLE
 
