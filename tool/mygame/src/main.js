@@ -3,8 +3,6 @@ import "kaplay/global";
 
 const k = kaplay()
 
-setGravity(1600);
- bean.jump();
 
 k.loadSprite("bean", "sprites/bean.png")
 
@@ -16,6 +14,10 @@ const bean = add([
 	area(),
   ]);
 
+
+
+setGravity(1600);
+ bean.jump();
 //     k.add ([
 // 	area(),
 // 	body(),
