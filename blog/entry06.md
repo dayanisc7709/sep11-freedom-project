@@ -19,6 +19,9 @@ Another skill I've been able to sharpen was this one and I don't normally get to
 ### Engineering Design Process
 I'm now on the last step of my process since I've been able to finally complete everything in the list and my project. And now that I've done everything for my project, I was able to present it to some judges and to my own classroom, which is showing my results to everyone, meaning I'm finally done with the entire engineering process.
 
+### Sources
+[SEP11 Presentation Slides](https://docs.google.com/presentation/d/1BqCNCh6ZfRlAAQy4mW1nen4G9IGC42kYzu6rq5VjQgA/edit?slide=id.g357efa34cc2_0_0#slide=id.g357efa34cc2_0_0)
+
 [Previous](entry05.md) 
 
 [Home](../README.md)
